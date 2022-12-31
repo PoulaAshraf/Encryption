@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #app{
+            width: 100%;
+            max-width: 100%;
+        }
+        #app p{
+            width: 100%;
+            padding: 14px;
+            background-color: darkred;
+            color: white;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 22px;
+        }
+
+        #app textarea{
+            width: 100%;
+            border: 2px solid gray;
+            outline: none;
+            border-radius: 14px;
+            min-height: 140px;
+        }
+
+        #app select{
+            width: 100%;
+            padding: 14px;
+            border-radius: 14px;
+            margin-bottom: 14px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body dir="rtl">
+    <main id="app">
+        <p>Text - نص</p>
+        <select name="" id="select">
+            <option value="encode">تشفير النص</option>
+            <option value="decode">فك تشفير النص</option>
+        </select>
+        <textarea name="" id="text" cols="30" rows="10"></textarea>
+        <p>النتيجة</p>
+        <textarea name="" id="result" cols="30" rows="10"></textarea>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
